@@ -1,13 +1,15 @@
-// const btn = document.querySelector('button');
-// let number = 1;
-// const addElement = function () {
-//     const divItem = document.createElement('div');
-//     if (number % 5 == 0) {
-//         divItem.classList.add('circle');
-//     }
-//     document.body.appendChild(divItem);
-//     divItem.textContent = number;
-//     number++;
-// }
+const btn = document.querySelector('button');
+let elementNumber = 0;
 
-// btn.addEventListener('click', addElement)
+const addElement = () => {
+    const div = document.createElement('div');
+    elementNumber++;
+    document.body.appendChild(div);
+    div.textContent = elementNumber;
+    if (elementNumber % 5 === 0) {
+        div.classList.add('circle');
+    }
+}
+
+
+btn.addEventListener('click', addElement)
