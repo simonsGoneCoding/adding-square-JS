@@ -1,0 +1,17 @@
+* {
+    font-family: arial;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.big {
+    font-size: 26px;
+}
